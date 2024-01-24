@@ -1,0 +1,62 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ZaemService.Zaemi"
+        Title="Zaemi">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Заемы"</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" Margin = "10 10 0 0"> Поиск по ФИО заемщика: </TextBlock>
+                <TextBox Name="SearchFIO" Width="200" Margin ="65 10 0 0" TextChanged="Search"></TextBox>
+                <TextBlock VerticalAlignment="Center"
+                           x:Name="FilterSot" Margin ="10 10 0 0">Фильтрация по сотруднику: </TextBlock>
+                <ComboBox Name="CmbSot" Width="200" Margin ="10 10 0 0" 
+                          x:CompileBindings="False"
+                          SelectionChanged="SotFioCmb">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding famil}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel> 
+            
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Name="Add" Content="Добавить" Click="AddData"></Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Name="Update" Content="Изменить" Click = "Edit"></Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Name="Delete" Content="Удалить" Click="DeleteData" ></Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button x:Name="exportButton" Content="Экспорт в Excel" Click="exportButton_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel> 
+            
+        <DataGrid Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Идентификатор" Binding="{Binding id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Клиент" Binding="{Binding familiya}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата займа" Binding="{Binding data_podpisaniya}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Сотрудник" Binding="{Binding famil}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+            
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <Button Name="Back" Content="Назад" Click="Back_OnClick"></Button>
+                <StackPanel Margin="100 0 00 0">
+                <Button Name="Reset" Content="Сброс фильтра" Click="Reset_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>

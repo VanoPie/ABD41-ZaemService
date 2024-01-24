@@ -1,0 +1,48 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ZaemService.CRUDZaemshiki"
+        Title="CRUDZaemshiki">
+    <Grid>
+           <UniformGrid Columns="1">
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Идентификатор: </TextBlock>
+                   <TextBox Name="id" x:CompileBindings="False" Text="{Binding id}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Фамилия: </TextBlock>
+                   <TextBox Name="familiya" x:CompileBindings="False" Text="{Binding familiya}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Имя: </TextBlock>
+                   <TextBox Name="imya" x:CompileBindings="False" Text="{Binding imya}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Отчество: </TextBlock>
+                   <TextBox Name="otchestvo" x:CompileBindings="False" Text="{Binding otchestvo}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Серия паспорта: </TextBlock>
+                   <TextBox Name="pasport" x:CompileBindings="False" Text="{Binding pasport}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Номер телефона: </TextBlock>
+                   <TextBox Name="telephone" x:CompileBindings="False" Text="{Binding telephone}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Адрес работы: </TextBlock>
+                   <TextBox Name="adres_raboti" x:CompileBindings="False" Text="{Binding adres_raboti}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <TextBlock Margin = "10 35 0 0">Здание работы: </TextBlock>
+                   <TextBox Name="zdanie_raboti" x:CompileBindings="False" Text="{Binding zdanie_raboti}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal">
+                   <Button Name="Save" Content="Сохранить" Click="Save_OnClick"  Margin = "10 15 0 20"></Button>
+                   <Button Name="Back" Content="Назад" Click="GoBack"  Margin = "50 15 0 20"></Button>
+               </StackPanel>
+           </UniformGrid>
+       </Grid>
+   </Window>

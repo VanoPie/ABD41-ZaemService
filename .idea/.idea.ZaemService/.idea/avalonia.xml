@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ZaemService/App.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/CRUD4Zaemi.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/CRUDZaemshiki.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/Choise.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/CrudZaemi.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/MainWindow.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/Tables/Zaemi.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/Tables/Zaemshik.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/Zaemi.axaml" value="ZaemService/ZaemService.csproj" />
+        <entry key="ZaemService/Zaemshik.axaml" value="ZaemService/ZaemService.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

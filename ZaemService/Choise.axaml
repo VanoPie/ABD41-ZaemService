@@ -1,0 +1,46 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ZaemService.Choise"
+        Title="Выбор таблицы данных">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Выбор таблицы для просмотра</TextBlock>
+            <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <Button Name="zaemi" Content="Заемы" Click="Zaemi"></Button>
+                <TextBlock Margin = "10 10 10 10"> - представлены данные о действующих кредитах </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <Button Name="zaemshik" Content="Заемщик" Click="Zaemshik"></Button>
+                <TextBlock Margin = "10 10 10 10"> - данные о клиентах, взявших кредит </TextBlock>
+            </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="pasport" Content="Паспорта клиентов"></Button>
+                    <TextBlock Margin = "10 10 10 10"> - данные из паспортов клиентов  </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="sotrudniki" Content="Сотрудники"></Button>
+                    <TextBlock Margin = "10 10 10 10"> - информация о сотрудниках компании </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="dolzhnosti" Content="Должности сотрудников"></Button>
+                    <TextBlock Margin = "10 10 10 10"> - имеющиеся должности работников </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="dogovor" Content="Составленные договора"></Button>
+                    <TextBlock Margin = "10 10 10 10"> - действующие составленные договора с заемщиками  </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="bank" Content="Банки"></Button>
+                    <TextBlock Margin = "10 10 10 10"> - банки, предоставляющие получение кредита</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 100 0 0">
+                    <Button Name="exit" Content="Выход" Click="Exit_OnClick"></Button>
+                </StackPanel>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
